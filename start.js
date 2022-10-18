@@ -12,9 +12,14 @@ function howOld(age,year) {
           return `The year ${year} was ${beforeBirth} years before you were born`
         } else if (birthYear < year) {
           return `You were ${afterBirth} in the year ${year}`
+        } else if (birthYear === year) {
+          return `Thats the year you were born!`
         }
+    } else if (year === currentYear) {
+      return `Youre ${age} now!`;
     }
   }
 
-  console.log(howOld(24, 2066))
+  console.log(howOld( 24, 1998))
+
   
